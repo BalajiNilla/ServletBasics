@@ -6,6 +6,12 @@
   <servlet-name> addservlet </servlet-name>
   <servlet-class>com.demo.app.AddServlet</servlet-class>
   <!-- servlet config means intial set up for a servlet -->
+  
+  <init-param>
+  <param-name>name</param-name>
+  <param-value>sai</param-value>
+  </init-param>
+  
   </servlet>
   
   <servlet-mapping>

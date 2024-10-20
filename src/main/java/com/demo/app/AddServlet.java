@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.http.HttpResponse;
 
 import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.Cookie;
@@ -38,6 +39,9 @@ public class AddServlet extends HttpServlet {
 		
 		ServletContext cxt = getServletContext();
 		System.out.println(cxt.getInitParameter("name"));
+		
+		ServletConfig config = getServletConfig();
+		System.out.println(config.getInitParameter("name"));
 	}
 
 }
