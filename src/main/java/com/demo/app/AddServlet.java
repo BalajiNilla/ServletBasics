@@ -7,12 +7,14 @@ import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
+@WebServlet("/add")
 public class AddServlet extends HttpServlet {
 	
 	
@@ -37,11 +39,11 @@ public class AddServlet extends HttpServlet {
 		res.addCookie(ck);
 		res.sendRedirect("ms");	//URL Rewriting	//using sendredirect
 		
-		ServletContext cxt = getServletContext();
-		System.out.println(cxt.getInitParameter("name"));
-		
-		ServletConfig config = getServletConfig();
-		System.out.println(config.getInitParameter("name"));
+//		ServletContext cxt = getServletContext();
+//		System.out.println(cxt.getInitParameter("name"));
+//		
+//		ServletConfig config = getServletConfig();
+//		System.out.println(config.getInitParameter("name"));
 	}
 
 }

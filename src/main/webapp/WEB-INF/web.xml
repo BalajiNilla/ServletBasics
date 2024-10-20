@@ -2,38 +2,5 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
   <display-name>DemoApp</display-name>
   
-  <servlet>
-  <servlet-name> addservlet </servlet-name>
-  <servlet-class>com.demo.app.AddServlet</servlet-class>
-  <!-- servlet config means intial set up for a servlet -->
   
-  <init-param>
-  <param-name>name</param-name>
-  <param-value>sai</param-value>
-  </init-param>
-  
-  </servlet>
-  
-  <servlet-mapping>
-  <servlet-name>addservlet</servlet-name>
-  <url-pattern>/add</url-pattern>
-  </servlet-mapping>
-  
-  
-   <servlet>
-  <servlet-name> myservlet </servlet-name>
-  <servlet-class>com.demo.app.myServlet</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  <servlet-name>myservlet</servlet-name>
-  <url-pattern>/ms</url-pattern>
-  </servlet-mapping>
-  
-  <!-- servletcontext means initial set up for all servlets -->
-  
-  <context-param>
-  <param-name>name</param-name>
-  <param-value>Balaji</param-value>
-  </context-param>
 </web-app>
