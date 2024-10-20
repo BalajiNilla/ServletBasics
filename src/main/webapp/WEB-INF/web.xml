@@ -5,6 +5,7 @@
   <servlet>
   <servlet-name> addservlet </servlet-name>
   <servlet-class>com.demo.app.AddServlet</servlet-class>
+  <!-- servlet config means intial set up for a servlet -->
   </servlet>
   
   <servlet-mapping>
@@ -23,6 +24,10 @@
   <url-pattern>/ms</url-pattern>
   </servlet-mapping>
   
+  <!-- servletcontext means initial set up for all servlets -->
   
-  
+  <context-param>
+  <param-name>name</param-name>
+  <param-value>Balaji</param-value>
+  </context-param>
 </web-app>

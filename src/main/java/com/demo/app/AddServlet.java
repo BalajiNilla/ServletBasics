@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.http.HttpResponse;
 
 import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
@@ -34,6 +35,9 @@ public class AddServlet extends HttpServlet {
 		
 		res.addCookie(ck);
 		res.sendRedirect("ms");	//URL Rewriting	//using sendredirect
+		
+		ServletContext cxt = getServletContext();
+		System.out.println(cxt.getInitParameter("name"));
 	}
 
 }
